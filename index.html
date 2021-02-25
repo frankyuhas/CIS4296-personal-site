@@ -10,24 +10,45 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script defer src="fontawesome/js/all.js"></script>
-    <title>John Doe</title>
+    <title>Frank Yuhas</title>
     <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
         html,
         body {
             height: 100%;
-            font-family: 'Merriweather Sans', sans-serif;
+            font-family: 'Cabin', sans-serif;
             scroll-behavior: smooth;
+            
         }
+
+        h3{
+            color:white;
+        }
+
+
+
+        #intro{
+            height: 100%;
+            background: url("images/mountains.jpg")no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+        }
+
 
         .faded {
             opacity: 0.8
         }
 
-        .landing {
+
+        .container {
             min-height: 100%;
             min-height: calc(100% - 56px);
-            padding-top: 56px;
+            padding-top: 56px; 
         }
+
 
         .btn-outline {
             color: black;
@@ -77,61 +98,129 @@
         .next a {
             color: rgb(33, 37, 41);
         }
+
+        .card{
+            margin: 0 auto;
+        }
+        #dwn-arrow{
+            max-width: 80px;
+        }
+        #dwn-arrow-rev{
+            max-width: 80px;
+            filter: invert(100%);
+        }
+
+        #landing-row{
+            padding-top: 250px;
+        }
+
+        #courses-row{
+            padding-top: 50px;
+
+        }
+        #about{
+            padding-top: 90px;
+        }
+
+        .lineBreak{
+            border-top: 3px solid #FFFFFF;
+            width: 80%;
+        }
+
+        .projects-container{
+            height: 100%;
+        }
+
+        .nav img {
+            height: 25px;
+            filter: invert(70%);
+        }
+
+        @media screen and (max-width: 800px) {
+            #dwn-arrow{
+                visibility: hidden;
+            }
+            #dwn-arrow-rev{
+                visibility: hidden;
+            }
+        }
+
     </style>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#landing">John Doe<span class="sr-only">(current)</span></a>
+        <a class="navbar-brand" href="#intro">Frank Yuhas<span class="sr-only">(current)</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav mr-auto justify-content-center">
                 <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
+                    <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#courses">Courses</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav ml-auto">
+            <li>
+                <a href="https://www.linkedin.com/in/francis-yuhas/" class="nav-link"><img class="img-responsive2" src="images/linkedin.svg" /></a>
+                <li>
+                    <a href="https://github.com/frankyuhas" class="nav-link"><img class="img-responsive2" src="images/github.svg" /></a>
+                <li>
+                    <a href="mailto:frankyuhas@icloud.com" class="nav-link"><img class="img-responsive2" src="images/mail.svg"></i></a>
                 </li>
             </ul>
         </div>
     </nav>
-    <div class="container landing d-flex justify-content-center flex-column align-items-center" id="landing">
+
+    <!-- Mask -->
+
+    <div id="intro" class="view">
+
+        <div class="full-bg-img">
+            <div class="container">
+                <div class="row mx-auto" id="landing-row">
+                    <div class="col-sm">
+                        <h4 class="display-2 font-weight-bold mx-auto text-center text-white">Hey, I'm Frank!</h4>
+                        <hr class="lineBreak">
+                    </div>
+                </div>
+                <div class="row mx-auto">
+                    <div class="col-sm">
+                        <h5 class="display-5 mx-auto text-center text-white">I'm an Information Science & Technology Student at Temple University.</h5>
+                    </div>
+                </div>
+                <div class="row mx-auto">
+                    <div class="col-sm text-center">
+                        <br>
+                        <a class="btn btn-success" href="#about">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Mask -->
+
+
+    
+   <!--  <div class="container landing d-flex justify-content-center flex-column align-items-center" id="landing">
         <div class="row mx-auto">
-            <h4 class="display-4 font-weight-bold mx-auto text-center">Hello, I'm John!</h4>
+            <h4 class="display-4 font-weight-bold mx-auto text-center">Hello, I'm Frank!</h4>
         </div>
         <div class="row mx-auto">
             <h5 class="display-5 mx-auto faded text-center">I'm an Information Science & Technology Student at Temple
                 University.</h5>
         </div>
-        <div class="row my-4">
-            <div class="col my-3"><img src="images/python.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Python" /></div>
-            <div class="col my-3"><img src="images/angular.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Angular" /></div>
-            <div class="col my-3"><img src="images/typescript.jpg" class="lang" data-toggle="tooltip"
-                    data-placement="top" title="TypeScript" /></div>
-
-            <div class="col my-3"><img src="images/csharp.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="C#" /></div>
-            <div class="col my-3"><img src="images/node.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Node.js" /></div>
-            <div class="col my-3"><img src="images/java.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Java" /></div>
-
-            <div class="col my-3"><img src="images/aspnet.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="ASP.NET" /></div>           
-                     <div class="col my-3"><img src="images/mssql.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Microsoft SQL Server" /></div> <div class="col my-3"><img src="images/mongodb.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="MongoDB" /></div>
-
-        </div>
+        
         <div class="row my-4">
             <div class="col">
                 <a href="#projects"><button type="button" class="btn btn-outline">Projects</button></a>
@@ -144,88 +233,155 @@
             </div>
         </div>
         <div class="row mt-5 next">
-            <a href="#projects" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
-                    title="Projects"></i></a> </div>
+            <a href="#projects" class="col"><img class="img-responsive" id="dwn-arrow" src="images/sort-down.svg"></a> </div> -->
+
+
+
+<div class="projects-container">
+    
+    <div class="container landing d-flex justify-content-center flex-column align-items-center" id="about">
+
+        <div class="row mx-auto">
+            <h4 class="display-3 font-weight-bold mx-auto text-center">About me...</h4>
+        </div>
+        <div class="row mx-auto">
+            <h5 class="display-5 mx-auto faded text-center mb-4">I'm normal I promise</h5>
+        </div>
+
+        <div class="card mb-3" style= "max-width: 800px;">
+          <img src="images/me.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <!-- <h5 class="card-title">Card title</h5>
+ -->            <p class="card-text">I grew up in Northeast Pennsylvania and moved to Phildalphia when I started at Temple. I love hiking, camping, making music and tinkering with electronics. My dog Leah is my favorite creature on planet earth without question. </p>
+           
+          </div>
+        </div>
+        
+        <div class="row mt-5 next">
+            <a href="#courses" class="col"><img class="img-responsive" id="dwn-arrow" src="images/sort-down.svg"></a> </div>
+
 
     </div>
+
+</div>
+
+    <div id="intro" class="view">
+
+        <div class="full-bg-img">
+           <div class="container" id="courses">
+                <div class="row mx-auto" id="courses-row">
+                    <h4 class="display-3 font-weight-bold mx-auto text-center text-white">Courses</h4>
+                </div>
+                <hr class="lineBreak">
+
+                <div class="row mx-auto mb-4">
+                    <h5 class="display-5 mx-auto text-center text-white">Just some of what I've learned</h5>
+                </div>
+                <div class="row w-100 justify-content-center my-3 mx-auto">
+                    <div class="col text-center course">
+                        <h5>Information Systems Analysis and Design</h5>
+                    </div>
+                    <div class="col text-center course">
+                        <h5>Server-Side Web Application Development</h5>
+                    </div>
+                </div>
+                <div class="row w-100 justify-content-center my-3 mx-auto">
+                    <div class="col text-center course">
+                        <h5>Network Architectures</h5>
+                    </div>
+                    <div class="col text-center course">
+                        <h5>Client-Side Scripting</h5>
+                    </div>
+                </div>
+                <div class="row w-100 justify-content-center my-3 mx-auto">
+                    <div class="col text-center course">
+                        <h5>Component-Based Software Design</h5>
+                    </div>
+                    <div class="col text-center course">
+                        <h5>Database Management Systems</h5>
+                    </div>
+                </div>
+                <div class="row w-100 justify-content-center my-3 mx-auto">
+                    <div class="col text-center course">
+                        <h5>UX Design</h5>
+                    </div>
+                    <div class="col text-center course">
+                        <h5>Programming in Python</h5>
+                    </div>
+                </div>
+                <div class="row w-100 justify-content-center my-3 mx-auto">
+                    <div class="col text-center course">
+                        <h5>Data Structures</h5>
+                    </div>
+                    <div class="col text-center course">
+                        <h5>Network Architectures and Operating Systems</h5>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+                <br>
+
+                <div class="row mt-5 next">
+                    <div class="row mt-5 next mx-auto">
+                    <a href="#projects" class="col"><img class="img-responsive" id="dwn-arrow-rev" src="images/sort-down.svg"></a> </div>
+                </div>
+            
+            </div>
+        </div>
+
+    </div>
+
+    <div class="projects-container">
+    
     <div class="container landing d-flex justify-content-center flex-column align-items-center" id="projects">
         <div class="row mx-auto">
-            <h4 class="display-4 font-weight-bold mx-auto text-center">Projects</h4>
+            <h4 class="display-3 font-weight-bold mx-auto text-center">Projects</h4>
         </div>
         <div class="row mx-auto">
-            <h5 class="display-5 mx-auto faded text-center mb-4">I've worked on some neat things.</h5>
+            <h5 class="display-5 mx-auto faded text-center mb-4">Some stuff I made...</h5>
         </div>
-        <div class="row w-100">
-            <h5>Inspiro for Esperanza</h5>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="card" style="width: 18rem; height: 25rem;">
+                      <img src="images/realestate.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Real Estate API</h5>
+                        <p class="card-text">An API used to get house data from a data base and display it for the user. Built using Jquery, ASP.NET, C# and Ajax</p>
+                        <a href="https://github.com/frankyuhas/realEstateAPI" class="btn btn-primary">View on Github</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                     <div class="card" style="width: 18rem; height: 25rem;">
+                      <img src="images/albumjunkies.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Music Review Site</h5>
+                        <p class="card-text">An album review site that uses a CRUD structure. Has login functionality for users. Built with Ruby on Rails</p>
+                        <a href="https://github.com/frankyuhas/backupMusicSite" class="btn btn-primary">View on Github</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                     <div class="card" style="width: 18rem; height: 25rem;">
+                      <img src="images/pizzaShop.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Pizza Shop</h5>
+                        <p class="card-text">A pizza ordering website built using ASP.NET, C#, HTML/CSS and styled using Bootstrap. It implements Gridviews to interact with a Database.</p>
+                        <a href="https://github.com/frankyuhas/pizzaShop" class="btn btn-primary">View on Github</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row w-100 mb-4">
-            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus nisi
-                in neque blandit auctor. Vestibulum pellentesque fringilla nulla quis sagittis. Donec id erat
-                sodales, fringilla est non, vestibulum tellus. Suspendisse potenti. Fusce et dolor blandit,
-                tincidunt eros non, pharetra orci. Donec massa neque, suscipit at purus ac, cursus tincidunt
-                purus. Suspendisse imperdiet massa nec sem dictum luctus. Vestibulum at porta lectus, sed
-                faucibus libero. </p>
-        </div>
-        <div class="row w-100">
-            <h5>Work From Home Pinterest</h5>
-        </div>
-        <div class="row w-100 mb-4">
-            <p class="text-justify">Vestibulum vulputate ullamcorper placerat. Fusce bibendum ligula non ex dapibus
-                finibus. Nulla facilisi. Integer eu libero lorem. Pellentesque eget pretium ligula. Donec finibus nibh
-                sed leo dapibus imperdiet. Fusce cursus eu mi sed porttitor. Aliquam eget suscipit dolor, ac mollis
-                risus. Vestibulum commodo turpis nulla, bibendum varius urna dictum porta. </p>
-        </div>
-        <div class="row w-100">
-            <h5>Query Dating Site</h5>
-        </div>
-        <div class="row w-100">
-            <p class="text-justify">Fusce egestas lectus ac est porttitor congue. Mauris lacinia pharetra odio ut
-                egestas. Nullam facilisis condimentum consequat. Integer arcu nibh, ullamcorper non fringilla quis,
-                tempus sit amet turpis. Proin ac gravida mi. Ut eros quam, pharetra venenatis pharetra at, porttitor sit
-                amet dolor. Ut et accumsan metus. Phasellus eros diam, tristique a maximus vel, fringilla eu nisl.
-                Pellentesque sed quam non urna dapibus porta in in nibh. Phasellus lobortis nibh est, id pretium orci
-                efficitur at. </p>
-        </div>
-        <div class="row mt-5 next">
-            <a href="#courses" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
-                    title="Courses"></i></a> </div>
+
     </div>
-    <div class="container landing d-flex justify-content-center flex-column align-items-center" id="courses">
-        <div class="row mx-auto">
-            <h4 class="display-4 font-weight-bold mx-auto text-center">Courses</h4>
-        </div>
-        <div class="row mx-auto mb-4">
-            <h5 class="display-5 mx-auto faded text-center">Not as tasty as a main course, but close.</h5>
-        </div>
-        <div class="row w-100 justify-content-center my-3">
-            <div class="col text-center course">
-                <h5>Information Systems Analysis and Design</h5>
-            </div>
-            <div class="col text-center course">
-                <h5>Server-Side Web Application Development</h5>
-            </div>
-        </div>
-        <div class="row w-100 justify-content-center my-3">
-            <div class="col text-center course">
-                <h5>Network Architectures</h5>
-            </div>
-            <div class="col text-center course">
-                <h5>Client-Side Scripting</h5>
-            </div>
-        </div>
-        <div class="row w-100 justify-content-center my-3">
-            <div class="col text-center course">
-                <h5>Component-Based Software Design</h5>
-            </div>
-            <div class="col text-center course">
-                <h5>Database Management Systems</h5>
-            </div>
-        </div>
-        <div class="row mt-5 next">
-            <a href="#contact" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
-                    title="Contact"></i></a> </div>
-    </div>
-    <div class="container landing d-flex justify-content-center flex-column align-items-center" id="contact">
+
+</div>
+
+   <!--  <div class="container landing d-flex justify-content-center flex-column align-items-center" id="contact">
         <div class="row mx-auto">
             <h4 class="display-4 font-weight-bold mx-auto text-center">Feel Like Reaching Out?</h4>
         </div>
@@ -233,18 +389,18 @@
             <h5 class="display-5 mx-auto faded text-center">I don't bite.</h5>
         </div>
         <div class="row my-4 contacticon">
-            <a href="mailto:johndoe@gmail.com" class="col mx-3"><i class="fas fa-envelope-square"
+            <a href="mailto:frankyuhas@icloud.com" class="col mx-3"><i class="fas fa-envelope-square"
                     data-toggle="tooltip" data-placement="top" title="Email"></i></a>
-            <a href="https://www.linkedin.com/in/johndoe/" class="col mx-3"><i class="fab fa-linkedin"
+            <a href="https://www.linkedin.com/in/francis-yuhas/" class="col mx-3"><i class="fab fa-linkedin"
                     data-toggle="tooltip" data-placement="top" title="LinkedIn"></i></a>
-            <a href="https://github.com/johndoe" class="col mx-3"><i class="fab fa-github-square"
+            <a href="https://github.com/frankyuhas" class="col mx-3"><i class="fab fa-github-square"
                     data-toggle="tooltip" data-placement="top" title="Github"></i></a>
 
         </div>
         <div class="row mt-5">
-            <a href="#landing"><button type="button" class="btn btn-outline">Return to Top</button></a>
+            <a href="#intro"><button type="button" class="btn btn-outline">Return to Top</button></a>
         </div>
-    </div>
+    </div> -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
